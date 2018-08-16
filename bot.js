@@ -226,7 +226,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", message => {
- if (message.content === `1help`) {
+ if (message.content === `help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
