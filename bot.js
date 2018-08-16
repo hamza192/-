@@ -245,8 +245,11 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }
    }); 
   
-
-
+client.on('ready', () => {
+  client.user.setGame(`1play لخواص البوت `,'https://www.twitch.');
+});
+	
+	
 
 
 
