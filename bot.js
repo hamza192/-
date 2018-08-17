@@ -252,7 +252,7 @@ client.on('ready', () => {
 	
 
 
-.
+
 
 
 
