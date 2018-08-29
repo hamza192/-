@@ -245,10 +245,8 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }
    }); 
   
-client.on('ready', () => {
-  client.user.setGame(`نعمل لسعادتكم.');
-});
-	
+
+
 	
 
 
