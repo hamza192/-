@@ -24,7 +24,7 @@ client.on('ready', () => {
     console.log(`[Codes] ${client.users.size}`)
     client.user.setStatus("idle")
 });
-const prefix = "1"
+const prefix = "s"
 client.on('message', async msg => {
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -68,7 +68,7 @@ client.on('message', async msg => {
 					const embed1 = new Discord.RichEmbed()
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
-					.setFooter("lego")
+					.setFooter("! United Family.-")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -246,7 +246,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }); 
   
 client.on('ready', () => {
-  client.user.setGame(`1help لخواص البوت `,'https://www.twitch.');
+  client.user.setGame(`نعمل لسعادتكم.');
 });
 	
 	
