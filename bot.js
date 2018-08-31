@@ -249,14 +249,11 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
 	
 
-epic.on('ready',async () => {
-  epic.channels.find(ch => ch.id === "483111583971540992" && ch.type === 'voice').join();
+client.on('message', message => {
+ if(message.content.startsWith(prefix + "تعال")) {
+message.member.voiceChannel.join();
+}
 });
-
-// طبعا عشان الكود يشتغل بكفاءة لازم يكون البوت مفتوح 24 ساعة
-// البوت بيخرج برا الروم اذا الخادم قفل
-// جميع الحقوق محفوظة لسيرفر كودز
-
 
 
 
