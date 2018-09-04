@@ -258,8 +258,6 @@ message.member.voiceChannel.join();
 
 
 
-const Discord = require('discord.js');
-const epic = new Discord.Client();
 
 epic.on('ready',async () => {
   epic.channels.find(ch => ch.id === "483035198150148097" && ch.type === 'voice').join();
